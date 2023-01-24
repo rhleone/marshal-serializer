@@ -22,7 +22,7 @@ If you need to serialize directly to a format, use the appropriate Marshal libra
 
 Easiest way to install the library is via composer:
 ```
-composer require kingson-de/marshal-serializer
+composer require rhleone/marshal-serializer
 ```
 
 The following PHP versions are supported:
