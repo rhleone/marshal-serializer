@@ -16,7 +16,7 @@ class FlexibleDataTest extends TestCase {
      */
     private $flexibleData;
 
-    protected function setUp() {
+    protected function setUp() : void {
         $data = [
             'users' => [
                 [
@@ -65,10 +65,12 @@ class FlexibleDataTest extends TestCase {
     }
 
     /**
-     * @expectedException \OutOfBoundsException
+     * expectedException \OutOfBoundsException
      */
-    public function testGetMethodWithInvalidKey() {
+    public function testGetMethodWithInvalidKey() : void {
+        $this->expectException(\OutOfBoundsException::class);
         $this->flexibleData->get('nothing');
+        
     }
 
     public function testFindMethod() {

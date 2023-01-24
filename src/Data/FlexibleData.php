@@ -92,14 +92,14 @@ class FlexibleData implements DataStructure, \ArrayAccess, \Iterator {
     /**
      * @inheritdoc
      */
-    public function current() {
+    public function current() : FlexibleData {
         return new FlexibleData($this->data[$this->position]);
     }
 
     /**
      * @inheritdoc
      */
-    public function next() {
+    public function next()  {
         ++$this->position;
     }
 
@@ -113,14 +113,14 @@ class FlexibleData implements DataStructure, \ArrayAccess, \Iterator {
     /**
      * @inheritdoc
      */
-    public function valid() {
+    public function valid()  {
         return isset($this->data[$this->position]);
     }
 
     /**
      * @inheritdoc
      */
-    public function rewind() {
+    public function rewind()  {
         $this->position = 0;
     }
 }
