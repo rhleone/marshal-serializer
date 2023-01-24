@@ -30,6 +30,7 @@ The following PHP versions are supported:
 * PHP 7.1
 * PHP 7.2
 * PHP 7.3
+* PHP 8.1
 
 ## Execute tests
 Just run:
